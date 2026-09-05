@@ -4,7 +4,7 @@ SCT-Net is a Few-Shot Object Detection (FSOD) model that leverages multi-scale a
 
 ## Overview
 
-SCT-Net (Selective Cross-Transformer Network) is developed for FSOD scenarios, focusing on challenging tasks like aerial imagery detection. It outperforms several baseline models, including FCT, RetinaNet, and AAF-based frameworks, by applying innovative cross-attention and multi-scale features to efficiently identify objects with limited labeled training data. SCT-Net demonstrates superior performance particularly on datasets containing a variety of object scales, such as DOTA and DIOR.
+SCT-Net (Scale Cross-Transformer Network) is developed for FSOD scenarios, focusing on challenging tasks like aerial imagery detection. It outperforms several baseline models, including FCT, RetinaNet, and AAF-based frameworks, by applying innovative cross-attention and multi-scale features to efficiently identify objects with limited labeled training data. SCT-Net demonstrates superior performance particularly on datasets containing a variety of object scales, such as DOTA and DIOR.
 
 
 
@@ -20,7 +20,8 @@ Ensure that Detectron2 is installed from the GitHub repo as the latest version (
 
 - Please prepare the datasets and also the few-shot datasets following [TFA](https://github.com/ucbdrive/few-shot-object-detection/blob/master/datasets/README.md)
 - Please make sure that the datasets (besides PascalVOC) are in coco format
-<!-- - First run the scripts ./prepare_coco_few_shot.py and ./prepare_coco_few_shot_test.py  for creating support image list. Customize the paths in these files according to your needs. The seed 1729 is mainly used for fair comparison with [XQSA](https://github.com/pierlj/aaf_framework). -->
+
+
 - Please run the scripts in ./datasets
 - For a fair comparison, two sets of supports are created separately for training and testing. The testing support set is created specifically from the test set of the dataset.
 
